@@ -494,4 +494,152 @@ a:hover {
 
 .animate-fade-in {
     animation: fadeIn 0.5s ease-out;
+}/* Dropdown menu styling - Simple style like in the image */
+.navbar-nav .dropdown-menu {
+    border-radius: 0;
+    margin-top: 0;
+    padding: 0;
+    min-width: 180px; /* Giảm kích thước xuống */
+    border: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 14px; /* Giảm kích thước chữ */
+}
+
+.navbar-nav .dropdown-item {
+    padding: 10px 15px; /* Padding nhỏ hơn */
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px solid #f5f5f5;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.navbar-nav .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.navbar-nav .dropdown-item i {
+    margin-right: 8px;
+}
+
+/* Style for nav links with sub-items */
+.navbar-nav .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+.navbar-nav .dropdown-toggle::after {
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Simple dropdown animation */
+.dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px); /* Giảm khoảng cách animation */
+    transition: all 0.2s ease;
+}
+
+.dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Style for active dropdown toggle */
+.navbar-nav .nav-item.show .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #dc3545;
+}
+/* Dropdown Menu Enhancement */
+.navbar-nav .nav-item.dropdown {
+    position: static;
+}
+
+.navbar-nav .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    border: none;
+    margin-top: 0;
+    border-radius: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+}
+
+.navbar-nav .dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.mega-menu-content {
+    padding: 20px;
+}
+
+.mega-menu-column {
+    width: 100%;
+}
+
+.mega-menu-column h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.mega-menu-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mega-menu-column li {
+    margin-bottom: 8px;
+}
+
+.mega-menu-column a {
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    transition: color 0.2s ease;
+}
+
+.mega-menu-column a:hover {
+    color: var(--primary-color);
+}
+
+/* Featured item in dropdown */
+.dropdown-featured {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.dropdown-featured img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.dropdown-featured h6 {
+    font-weight: 600;
+    margin-bottom: 5px;
 }
